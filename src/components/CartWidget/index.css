@@ -1,0 +1,17 @@
+.Cart{
+    position: relative;
+}
+
+.pill{
+    position: absolute;
+    top: -8px;
+    right: 0;
+    padding: 2px 6px;
+    background-color: sandybrown;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.IconCart{
+    font-size: 35px;
+}
