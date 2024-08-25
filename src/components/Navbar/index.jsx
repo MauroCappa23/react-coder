@@ -21,7 +21,7 @@ const Navbar = () => {
                         <a href="" className='links'>Contacto</a>
                         </li>
                     <li className="list">
-                        <a href="" className='links'>
+                        <a href="" className=''>
                             <CartWidget/>
                         </a>
                         </li>
