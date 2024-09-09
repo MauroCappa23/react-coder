@@ -1,0 +1,181 @@
+[
+{
+    "id": 1,
+    "category":"ps5",
+    "img":{
+        "front":"/assets/img/card-img/FC24-1.jpg",
+        "disc":"/assets/img/card-img/Fc24-ps5.jpg"
+    },
+    "tag":"Used",
+    "title": "FC24",
+    "price": 34.99
+},
+
+{
+    "id": 2,
+    "category":"ps5",
+    "img":{
+        "front":"/assets/img/card-img/spider-man-2.jpg",
+        "disc":"/assets/img/card-img/spiderman2ps5.jpg"
+    },
+    "tag":"New",
+    "title": "Spiderman 2",
+    "price": 59.99
+},
+
+{
+    "id": 3,
+    "category":"ps5",
+    "img":{
+        "front":"/assets/img/card-img/Riseoftheronin.jpg",
+        "disc":"/assets/img/card-img/Rise-of-ronin-ps5.jpg"
+    },
+    "tag":"New",
+    "title": "Rise Of The Ronin",
+    "price": 54.99
+},
+
+{
+    "id": 4,
+    "category":"ps5",
+    "img":{
+        "front":"/assets/img/card-img/BO6.jpg",
+        "disc":"/assets/img/card-img/Bo6-ps5.jpg"
+    },
+    "tag":"New",
+    "title": "COD Black Ops 6",
+    "price": 69.99
+},
+
+{
+    "id": 5,
+    "category":"ps5",
+    "img":{
+        "front":"/assets/img/card-img/ACS.jpeg",
+        "disc":"/assets/img/card-img/ACS-ps5.jpg"
+    },
+    "tag":"New",
+    "title": "AC Shadows",
+    "price": 69.99
+},
+
+{
+    "id": 6,
+    "category":"ps5",
+    "img":{
+        "front":"/assets/img/card-img/thelastofus2.png",
+        "disc":"/assets/img/card-img/The-Last-of-Us-ps5.jpg"
+    },
+    "tag":"New",
+    "title": "The Last of Us 2",
+    "price": 29.99
+},
+
+{
+    "id": 7,
+    "category":"xbox",
+    "img":{
+        "front":"/assets/img/card-img/elderring.jpg",
+        "disc":"/assets/img/card-img/Elden-Ring--Xbox-Series-X.jpg"
+    },
+    "tag":"New",
+    "title": "Elden Ring",
+    "price": 69.99
+},
+
+{
+    "id": 8,
+    "category":"xbox",
+    "img":{
+        "front":"/assets/img/card-img/dragonsdogma2.jpg",
+        "disc":"/assets/img/card-img/DD2-Xbox.jpg"
+    },
+    "tag":"Used",
+    "title": "Dragons Dogma 2",
+    "price": 44.99
+},
+
+{
+    "id": 9,
+    "category":"xbox",
+    "img":{
+        "front":"/assets/img/card-img/Halo.jpg",
+        "disc":"/assets/img/card-img/Halo-Infinite-xbox.jpg"
+    },
+    "tag":"New",
+    "title": "Halo Infinite",
+    "price": 49.99
+},
+
+{
+    "id": 10,
+    "category":"xbox",
+    "img":{
+        "front":"/assets/img/card-img/SWOutlaws.jpg",
+        "disc":"/assets/img/card-img/SWO-xbox.jpg"
+    },
+    "tag":"New",
+    "title": "Star Wars Outlaws",
+    "price": 69.99
+},
+
+{
+    "id": 11,
+    "category":"switch",
+    "img":{
+        "front":"/assets/img/card-img/Zelda-1.jpg",
+        "disc":"/assets/img/card-img/zelda-xbox.jpg"
+    },
+    "tag":"Used",
+    "title": "Zelda: Breath of the Wild",
+    "price": 24.99
+},
+
+{
+    "id": 12,
+    "category":"switch",
+    "img":{
+        "front":"/assets/img/card-img/supersmash.jpg",
+        "disc":"/assets/img/card-img/Super-Smash-Bros.-switch.jpg"
+    },
+    "tag":"New",
+    "title": "Super Smash Bros.",
+    "price": 29.99
+},
+
+{
+    "id": 13,
+    "category":"switch",
+    "img":{
+        "front":"/assets/img/card-img/SMPJamboree.jpg",
+        "disc":"/assets/img/card-img/SMP-switch.jpg"
+    },
+    "tag":"New",
+    "title": "Super Mario Party Jamboree",
+    "price": 59.99
+},
+
+{
+    "id": 14,
+    "category":"ps4",
+    "img":{
+        "front":"/assets/img/card-img/RDR2.jpg",
+        "disc":"/assets/img/card-img/RDR2-ps4.jpg"
+    },
+    "tag":"Used",
+    "title": "Read Dead Redemption 2",
+    "price": 19.99
+},
+
+{
+    "id": 15,
+    "category":"ps4",
+    "img":{
+        "front":"/assets/img/card-img/LOTF.jpg",
+        "disc":"/assets/img/card-img/Lords-of-the-Fallen-ps4.jpg"
+    },
+    "tag":"Used",
+    "title": "Lords of the Fallen",
+    "price": 9.99
+}
+]

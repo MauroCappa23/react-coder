@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import joystick from '../../assets/joystick.svg';
 import CartWidget from '../CartWidget';
 const Navbar = () => {
@@ -12,13 +14,13 @@ const Navbar = () => {
                 </div>
                 <menu className="menu">
                     <li className="list">
-                        <a href="" className='links'>Inicio</a>
+                        <Link to={`/`} className='links'>Home</Link>
                         </li>
                     <li className="list">
-                        <a href="" className='links'>Tienda</a>
+                        <Link to={`/games`} className='links'>Games</Link>
                         </li>
                     <li className="list">
-                        <a href="" className='links'>Contacto</a>
+                        <a href="" className='links'>Contact</a>
                         </li>
                     <li className="list">
                         <a href="" className=''>

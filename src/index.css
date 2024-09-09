@@ -1,10 +1,14 @@
-/*Global*/
+/*Globals*/
 @import './styles/reset.css';
 @import './styles/shared.css';
 
 /*Components Styles*/
 @import './components/Navbar/index.css';
 @import './components/CartWidget/index.css';
+@import './components/Card/index.css';
+@import './components/ItemList/index.css';
+@import './components/containers/Footer/index.css';
+@import './components/ItemDetail/index.css';
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
