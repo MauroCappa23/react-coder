@@ -1,9 +1,10 @@
 const ItemDetail = ({ title, img, price, category}) => {
     return (
       <section className="item-detail">
+        
         <picture className="item-detail__picture">
-            <img className="item-detail__picture--img img-1" src={`/src${img?.front}`} alt={`${title}`} />
-            <img className="item-detail__picture--img img-2" src={`/src${img?.disc}`} alt={`${title}`} />
+            <img className="item-detail__picture--img img-1" src={`/src/${img?.front}`} alt={`${title}`} />
+            <img className="item-detail__picture--img img-2" src={`/src/${img?.disc}`} alt={`${title}`} />
         </picture>
         <article className="item-detail__info">
             <p className="item-detail__cat">{category}</p>

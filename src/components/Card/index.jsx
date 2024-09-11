@@ -1,7 +1,8 @@
-const Card = ({title, img, price, tag, href, category}) => {
+import { Link } from "react-router-dom";
+const Card = ({title, img, price, id, tag, category}) => {
     return(
         <article className="card">
-        <a href={href}>
+        <Link to={`/detail/${id}`}>
           <picture className="card__picture">
             <span className="card__pill">{tag}</span>
             <img className="img-1" src={`/src/${img.front}`} alt={`${title}`} />
@@ -12,7 +13,7 @@ const Card = ({title, img, price, tag, href, category}) => {
             <h3 className="card__title">{title}</h3>
             <p className="card__price">$ {price} .-</p>
           </div>
-        </a>
+          </Link>
       </article>
     )
 }
