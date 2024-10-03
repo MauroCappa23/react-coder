@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import joystick from '../../assets/joystick.svg';
 import CartWidget from '../CartWidget';
@@ -14,13 +14,13 @@ const Navbar = () => {
                 </div>
                 <menu className="menu">
                     <li className="list">
-                        <Link to={`/`} className='links'>Home</Link>
+                        <NavLink to={`/`} className='links'>Home</NavLink>
                         </li>
                     <li className="list">
-                        <Link to={`/games`} className='links'>Games</Link>
+                        <NavLink to={`/games`} className='links'>Games</NavLink>
                         </li>
                     <li className="list">
-                        <a href="" className='links'>Contact</a>
+                        <NavLink to={`/contact`} className='links'>Contact</NavLink>
                         </li>
                     <li className="list">
                         <a href="" className=''>

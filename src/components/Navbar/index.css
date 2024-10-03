@@ -36,3 +36,7 @@
 .list{
     padding: .625rem;
 }
+
+.active{
+    border-bottom: 2px solid azure;
+}

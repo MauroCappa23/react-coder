@@ -1,4 +1,23 @@
+import { useContext, useState } from "react";
+import { CartContext } from "../../context/cartContext";
+
 const ItemDetail = ({ title, img, price, category}) => {
+  let [ quantity, setQuantity ] = useState(0);
+
+  const { addItems } = useContext(CartContext);
+  
+  const increase = () => {
+    setQuantity(preQuantity => preQuantity + 1);
+  };
+
+  const decrease = () => {
+    setQuantity(prevQuantity > 1 ? prevQuantity - 1 : 1);
+  };
+
+  const addToCart = () => {
+    addItems({title, img, price, category, quantity})
+  }
+
     return (
       <section className="item-detail">
         
@@ -12,11 +31,11 @@ const ItemDetail = ({ title, img, price, category}) => {
             <p className="item-detail__price">$ {price}</p>
             <form className="item-detail__form" action="" method="POST" encType="application/x-www-form-urlencoded">
                 <div className="item-detail__form--container">
-                    <button className="item-detail__form--btn" type="button">-</button>
-                    <input className="item-detail__form--input" type="text" placeholder="0" />
-                    <button className="item-detail__form--btn" type="button">+</button>
+                    <button className="item-detail__form--btn" type="button" onClick={decrease}>-</button>
+                    <input className="item-detail__form--input" type="text" value={quantity} readOnly/>
+                    <button className="item-detail__form--btn" type="button" onClick={increase}>+</button>
                 </div>
-                <input className="item-detail__form--submit" type="submit" value="Add to Cart" />
+                <input className="item-detail__form--submit" type="button" value="Add to Cart" onClick={addToCart} />
             </form>
         </article>
       </section>

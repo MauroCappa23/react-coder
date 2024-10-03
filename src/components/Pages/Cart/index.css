@@ -1,0 +1,103 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-size: 2.5rem;
+    margin: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  h3{
+    font-size: 1.5625rem;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .cart-page {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 5rem;
+    width: 100%;
+  }
+
+  .cart {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    align-content: space-around;
+  }
+
+  .cart__message {
+    width: 100%;
+    padding: 1.5rem;
+    background-color: beige;
+    text-align: center;
+    color: black;
+    font-size: medium;
+    font-weight: 500;
+    border-top: 2px solid whitesmoke;
+  }
+
+  .cart__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem;
+  }
+
+  th,
+  td {
+    border-bottom: 1px solid black;
+    padding: 0.4rem 0.7rem;
+    text-align: center;
+    font-size: small;
+    color: black;
+    font-weight: 600;
+  }
+
+  th {
+    background-color: white;
+    color: black;
+    font-size: medium;
+    font-weight: 700;
+  }
+
+  .cart-item {
+    &__icon {
+      color: whitesmoke;
+      font-size: small;
+      margin-right: 2rem;
+      cursor: pointer;
+    }
+}
+
+.cart-item__picture{
+    position: relative;
+}
+
+.cart-item__img{
+    height: 100px;
+    object-position: center;
+    object-fit: contain;
+}
+
+  span {
+    margin: 1rem;
+    text-align: center;
+    font-size: small;
+  }
+}
+
+.button-custom{
+    padding: 0.4rem;
+    width: 50px;
+    text-align: center;
+    background-color: rgb(61, 61, 120);
+    font-weight: bold;
+    color: white;
+  }

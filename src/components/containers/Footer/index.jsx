@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 import joystick from "../../../assets/joystick.svg";
 import instagram from "../../../assets/img/card-img/instagram.png";
 import twitter from "../../../assets/img/card-img/twitter.png";
@@ -11,19 +13,19 @@ const Footer = () => {
       </figure>
       <menu className="menu-footer">
         <li className="list">
-          <a href="#" className="links">
+          <NavLink to={"/"} className="links">
             Home
-          </a>
+          </NavLink>
         </li>
         <li className="list">
-          <a href="" className="links">
+          <NavLink to={"/games"} className="links">
             Games
-          </a>
+          </NavLink>
         </li>
         <li className="list">
-          <a href="" className="links">
+          <NavLink href="" className="links">
             Contact
-          </a>
+          </NavLink>
         </li>
       </menu>
       <figure className="logos">

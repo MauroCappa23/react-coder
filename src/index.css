@@ -9,6 +9,14 @@
 @import './components/ItemList/index.css';
 @import './components/containers/Footer/index.css';
 @import './components/ItemDetail/index.css';
+@import 'react-credit-cards-2/dist/es/styles-compiled.css';
+@import './components/Pages/Cart/index.css';
+@import './components/Pages/Contact/index.css';
+
+/*Tailwind*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
