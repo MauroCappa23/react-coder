@@ -38,7 +38,31 @@ const PaymentForm = () => {
           onChange={handleInputChange}
           onFocus={handleInputFocus}
         />
-        ...
+         <input
+          type="text"
+          name="name"
+          placeholder="Cardholder Name"
+          value={state.name}
+          onChange={handleInputChange}
+          onFocus={handleInputFocus}
+        />
+          <input
+          type="text"
+          name="expire"
+          placeholder="Expiration Date MM/YY"
+          pattern='\d{2}/\d{2}'
+          value={state.expire}
+          onChange={handleInputChange}
+          onFocus={handleInputFocus}
+        />
+         <input
+          type="tel"
+          name="cvc"
+          placeholder="CVC"
+          value={state.cvc}
+          onChange={handleInputChange}
+          onFocus={handleInputFocus}
+        />
       </form>
     </div>
   );

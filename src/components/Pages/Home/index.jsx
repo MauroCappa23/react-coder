@@ -1,7 +1,15 @@
+import Accordion from "../../Accordion";
+import ControlledCarousel from "../../Carousel";
+
 const Home = () => {
     return(
-        <main>
-
+        <main className="mt-4">
+            <div>
+                <ControlledCarousel/>
+            </div>
+            <div>
+            <Accordion/>
+            </div>
         </main>
     )
 }

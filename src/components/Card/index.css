@@ -13,7 +13,7 @@
 
 .card img {
   width: 100%;
-  height: 70%; /* Esto mantendrá la proporción original de la imagen */
+  height: 200px; /* Esto mantendrá la proporción original de la imagen */
   display: block;
   object-fit: cover;
   object-position: top 10px;
@@ -34,6 +34,8 @@
 .card__info {
   padding: 6px;
   text-align: center;
+  color: black;
+  font-size: large;
 }
 
 .card__pill{
@@ -49,8 +51,9 @@
 }
 
 .card__title{
-  font-size: 1.5625rem;
+  font-size: 1.75rem;
   padding-top: 0;
+  text-decoration: underline;
 }
 
 .card__cat{
@@ -60,6 +63,7 @@
 .card__price{
   font-size: small;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 

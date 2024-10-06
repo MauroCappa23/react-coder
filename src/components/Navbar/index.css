@@ -25,6 +25,8 @@
 .links{
     font-size: 1.8em;
     padding: .1875rem 0;
+    color: azure;
+    text-decoration: none;
 }
 
 .links:hover{

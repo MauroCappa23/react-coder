@@ -17,7 +17,7 @@ function App() {
       <BrowserRouter>
         <BaseLayout>
           <Routes>
-            <Route exact path='/' element={<Games/>}/>
+            <Route exact path='/' element={<Home/>}/>
             <Route exact path='/games' element={<Games/>}/>
             <Route exact path='/games/category/:id' element={<Games/>}/>
             <Route exact path='/detail/:id' element={<Detail/>}/>

@@ -12,6 +12,10 @@
 @import 'react-credit-cards-2/dist/es/styles-compiled.css';
 @import './components/Pages/Cart/index.css';
 @import './components/Pages/Contact/index.css';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import './components/Accordion/index.css';
+@import './components/Carousel/index.css';
+
 
 /*Tailwind*/
 @tailwind base;

@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { CartContext } from "../../context/cartContext";
 
-const ItemDetail = ({ title, img, price, category}) => {
+const ItemDetail = ({id, title, img, price, category}) => {
   let [ quantity, setQuantity ] = useState(0);
 
   const { addItems } = useContext(CartContext);
@@ -15,12 +15,11 @@ const ItemDetail = ({ title, img, price, category}) => {
   };
 
   const addToCart = () => {
-    addItems({title, img, price, category, quantity})
+    addItems({id, title, img, price, category, quantity})
   }
 
     return (
       <section className="item-detail">
-        
         <picture className="item-detail__picture">
             <img className="item-detail__picture--img img-1" src={`/src/${img?.front}`} alt={`${title}`} />
             <img className="item-detail__picture--img img-2" src={`/src/${img?.disc}`} alt={`${title}`} />

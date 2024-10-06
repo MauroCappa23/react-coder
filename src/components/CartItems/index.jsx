@@ -22,9 +22,9 @@ const CartItems = ({ item, removeItem, addItems }) => {
         <td>{item.title}</td>
         <td>${item.price}</td>
         <td>
-          <button onClick={() => addItems({ ...item, quantity: -1 })}>-</button>
+          <button className="item-detail__form--btn" onClick={() => addItems({ ...item, quantity: -1 })}>-</button>
           <span>{item.quantity}</span>
-          <button onClick={() => addItems({ ...item, quantity: 1 })}>+</button>
+          <button className="item-detail__form--btn" onClick={() => addItems({ ...item, quantity: 1 })}>+</button>
         </td>
         <td>${item.price * item.quantity}</td>
       </tr>
