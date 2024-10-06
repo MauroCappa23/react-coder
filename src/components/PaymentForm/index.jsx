@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Cards from 'react-credit-cards-2';
+import 'react-credit-cards-2/dist/es/styles-compiled.css';
 
-const PaymentForm = () => {
+const PaymentForm = ({pagoAprobado}) => {
   const [state, setState] = useState({
     number: '',
     expiry: '',
@@ -21,22 +22,23 @@ const PaymentForm = () => {
   }
 
   return (
-    <div>
+    <div className='card-container'>
       <Cards
         number={state.number}
         expiry={state.expiry}
         cvc={state.cvc}
         name={state.name}
-        focused={state.focus}
+        required
       />
-      <form>
+      <form className='card-form'>
         <input
-          type="number"
+          type="tel"
           name="number"
           placeholder="Card Number"
           value={state.number}
           onChange={handleInputChange}
           onFocus={handleInputFocus}
+          required
         />
          <input
           type="text"
@@ -45,15 +47,17 @@ const PaymentForm = () => {
           value={state.name}
           onChange={handleInputChange}
           onFocus={handleInputFocus}
+          required
         />
           <input
           type="text"
-          name="expire"
+          name="expiry"
           placeholder="Expiration Date MM/YY"
-          pattern='\d{2}/\d{2}'
-          value={state.expire}
+          pattern="\d{2}/\d{2}"
+          value={state.expiry}
           onChange={handleInputChange}
           onFocus={handleInputFocus}
+          required
         />
          <input
           type="tel"
@@ -62,6 +66,7 @@ const PaymentForm = () => {
           value={state.cvc}
           onChange={handleInputChange}
           onFocus={handleInputFocus}
+          required
         />
       </form>
     </div>

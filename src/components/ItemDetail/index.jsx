@@ -1,5 +1,7 @@
 import { useContext, useState } from "react";
 import { CartContext } from "../../context/cartContext";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ItemDetail = ({id, title, img, price, category}) => {
   let [ quantity, setQuantity ] = useState(0);
@@ -16,6 +18,17 @@ const ItemDetail = ({id, title, img, price, category}) => {
 
   const addToCart = () => {
     addItems({id, title, img, price, category, quantity})
+    toast.success('Added to cart!', {
+      position: "bottom-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      className: "toast-custom"
+  })
   }
 
     return (
@@ -37,6 +50,7 @@ const ItemDetail = ({id, title, img, price, category}) => {
                 <input className="item-detail__form--submit" type="button" value="Add to Cart" onClick={addToCart} />
             </form>
         </article>
+        <ToastContainer/>
       </section>
     );
   };

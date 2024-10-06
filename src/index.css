@@ -15,12 +15,8 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 @import './components/Accordion/index.css';
 @import './components/Carousel/index.css';
+@import './components/PaymentForm/index.css';
 
-
-/*Tailwind*/
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

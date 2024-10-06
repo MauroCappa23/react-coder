@@ -95,6 +95,7 @@ const Cart = () => {
                 <h2>Confirm Your Purchase</h2>
                 <PaymentForm total={total} onCheckout={handleCheckout} />
                 <button onClick={closeModal}>Cancel</button>
+                <button type="submit">Confirm Purchase</button>
             </Modal>
         </section>
     );
